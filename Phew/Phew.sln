@@ -12,6 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Phew", "src\Phew\Phew.xproj", "{06B3909D-26E3-4362-B03B-7009FACD8DBD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{2B52E652-1E6A-4063-82D7-99556DB46F78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{77604516-C22E-4888-8E4E-362118FD6491}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{C3F43367-CC60-4F29-B3BF-2303F63308C8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\DockerDemoAppDockerVM.json = PublishScripts\Templates\DockerDemoAppDockerVM.json
+		PublishScripts\Templates\DockerDemoAppDockerVM.param.dev.json = PublishScripts\Templates\DockerDemoAppDockerVM.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,5 +41,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{06B3909D-26E3-4362-B03B-7009FACD8DBD} = {950F566F-60DE-4536-B3BB-7C6FD5B21B81}
+		{77604516-C22E-4888-8E4E-362118FD6491} = {2B52E652-1E6A-4063-82D7-99556DB46F78}
+		{C3F43367-CC60-4F29-B3BF-2303F63308C8} = {2B52E652-1E6A-4063-82D7-99556DB46F78}
 	EndGlobalSection
 EndGlobal
